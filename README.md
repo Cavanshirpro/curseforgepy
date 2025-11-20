@@ -1,12 +1,24 @@
 # CurseForgePy
 
-[![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/)
+[![PyPI](https://img.shields.io/pypi/v/curseforgepy.svg)](https://pypi.org/project/curseforgepy)
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/)
+[![Python Version](https://img.shields.io/badge/python-3.10%2B-blue.svg)](https://www.python.org/)
 
 **CurseForgePy** is a production-grade, type-safe Python client library designed to interact with the CurseForge API. It goes beyond simple API wrapping by providing a full-featured **Modpack Installer**, a **Resumable Download Manager**, and an **Intelligent Caching System**.
 
 This library is built for developers creating Minecraft launchers, mod management tools, and server automation scripts. It abstracts away the complexities of authentication, rate-limiting, file hashing, and dependency management.
 
------
+
+---
+
+## Why CurseForgePy?
+
+CurseForgePy provides a high-level, typed interface over the CurseForge API and bundles practical tooling frequently needed by modpack tools and launchers:
+- Complete endpoint coverage with typed models for better developer experience and autocompletion
+- Reliable networking with rate-limit and error handling
+- Utilities that save you time (manifest parsing, overrides handling, atomic downloads, fingerprint matching)
+
+---
 
 ## 🌟 Key Features
 
@@ -187,7 +199,20 @@ The library is organized into modular components:
   * **`fileops.py`**: Low-level file operations (Atomic write, Hashing).
   * **`paths.py`**: Utilities to detect Minecraft installation paths on Windows/Linux/macOS.
 
+---
+
+## Testing & Development
+
+- Create and activate a virtual environment
+- Install dev dependencies (if present): `pip install -r dev-requirements.txt`
+- Run linters and tests:
+  - Lint: `flake8` / `ruff`
+  - Tests: `pytest`
+
+If you add features, include unit tests covering behavior and edge cases.
+
 -----
+
 
 ## 🤝 Contributing
 
@@ -208,3 +233,14 @@ This project is licensed under the **MIT License**. See the [LICENSE](https://ch
 -----
 
 **Developed by [Cavanşir Qurbanzadə](https://github.com/Cavanshirpro)**
+
+---
+
+## Acknowledgements
+
+Developed by Cavanşir Qurbanzadə — https://github.com/Cavanshirpro
+
+If you'd like, I can also:
+- Add a "Getting Started" tutorial or screenshots
+- Create a minimal example project demonstrating a launcher integration
+- Add CI examples (GitHub Actions) for tests and linting
